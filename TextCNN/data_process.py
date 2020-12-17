@@ -52,7 +52,7 @@ replacer = RegexpReplacer()
 # 特殊处理数据+去标点
 def data_process(text):
     text = text.lower()
-    # 特殊数据处理，该地方参考的殷同学的
+    # 特殊数据处理
     text = text.replace("<br /><br />", "").replace("it's", "it is").replace("i'm", "i am").replace("he's",
                                                                                                     "he is").replace(
         "she's", "she is") \
