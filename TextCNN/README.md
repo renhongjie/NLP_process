@@ -5,7 +5,8 @@
 
 模型图：
 
-![Image text](https://github.com/renhongjie/NLP_process/blob/main/ESIM/ESIM.png)
+![Image text](https://github.com/renhongjie/NLP_process/blob/main/TextCNN/TextCNN.PNG)
+![Image text](https://github.com/renhongjie/NLP_process/blob/main/TextCNN/TextCNN2.png)
 
 准确率：可以在测试集上达到准确率89%+（复习论文，但是没达到论文的最好效果）
 
