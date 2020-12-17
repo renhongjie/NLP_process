@@ -22,11 +22,11 @@ parser.add_argument('--num_classes', type=int, default=2)#分类个数
 parser.add_argument('--lr', type=float, default=1e-4)#学习率
 parser.add_argument('--droput', type=float, default=0.5)#丢弃率
 parser.add_argument('--num_epochs', type=int, default=10)#训练论数
-parser.add_argument('--vocab_size', type=int, default=0)#训练论数
+parser.add_argument('--vocab_size', type=int, default=0)#vocab大小
 parser.add_argument('--save_path', type=str, default="best.pth")#保存路径
-parser.add_argument('--CLS', type=str, default="[CLS]")#保存路径
-parser.add_argument('--PAD', type=str, default="[PAD]")#保存路径
-parser.add_argument('--weight_decay', type=float, default=1e-4)#保存路径
+parser.add_argument('--CLS', type=str, default="[CLS]")#CLS标记
+parser.add_argument('--PAD', type=str, default="[PAD]")#PAD标记
+parser.add_argument('--weight_decay', type=float, default=1e-4)#权重衰减
 args = parser.parse_args()
 tokenizer = AutoTokenizer.from_pretrained("./bert-base-uncased")
 model = AutoModel.from_pretrained("./bert-base-uncased")
