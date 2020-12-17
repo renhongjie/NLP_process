@@ -6,7 +6,7 @@ from itertools import chain
 # 特殊处理数据+去标点
 def data_process(text):
     text = text.lower()
-    # 特殊数据处理，该地方参考的殷同学的
+    # 特殊数据处理，
     text = text.replace("n't", "not")
     # 去除标点
     text = re.sub("[^a-zA-Z']", "", text.lower())

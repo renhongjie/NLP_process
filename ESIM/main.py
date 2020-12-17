@@ -22,12 +22,12 @@ parser.add_argument('--classification_num', type=int, default=4)#分类个数
 parser.add_argument('--lr', type=float, default=1e-3)#学习率
 parser.add_argument('--dropout', type=float, default=0.5)#丢弃率
 parser.add_argument('--num_epochs', type=int, default=100)#训练论数
-parser.add_argument('--vocab_size', type=int, default=0)#训练论数
+parser.add_argument('--vocab_size', type=int, default=0)#vocab大小
 parser.add_argument('--if_vail', type=bool, default=True)
 parser.add_argument('--word2vec_path', type=str, default="/Users/ren/Desktop/nlp相关/glove_to_word2vec.txt")#预训练词向量路径
 #parser.add_argument('--word2vec_path', type=str, default="/data/renhongjie/zouye1_new/data/glove_to_word2vec.txt")#预训练词向量路径
 parser.add_argument('--save_path', type=str, default="best3.pth")#保存路径
-parser.add_argument('--weight_decay', type=float, default=1e-4)#保存路径
+parser.add_argument('--weight_decay', type=float, default=1e-4)#权重衰减
 args = parser.parse_args()
 if args.if_vail:
     train_iter, test_iter,vail_iter,weight = utils.data(args)
