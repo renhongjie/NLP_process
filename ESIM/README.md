@@ -5,7 +5,7 @@
 
 模型图：
 
-![Image text](https://github.com/your_github/address/blob/master/image/1.png)
+![Image text](https://github.com/renhongjie/NLP_process/blob/main/ESIM/ESIM.png)
 
 准确率：可以在测试上达到89%+
 
