@@ -1,6 +1,37 @@
 # 词云展示
 成果展示：
-![Image text](https://github.com/renhongjie/NLP_process/blob/main/ESIM/ESIM.png)
+
+![Image text](https://github.com/renhongjie/NLP_process/blob/main/词云/1.png)
+图1
+![Image text](https://github.com/renhongjie/NLP_process/blob/main/词云/2.png)
+图2
+![Image text](https://github.com/renhongjie/NLP_process/blob/main/词云/3.png)
+图3
+![Image text](https://github.com/renhongjie/NLP_process/blob/main/词云/4.png)
+图4
+# NLP相关流程：
+分词->统计词频->建立词云
+
+建立词云貌似有两种方式：一种是直接传入文本，另一种传入词和对应的出现次数（本项目使用第二种方式）
+
+## 英文词云：
+### 1、分词：大多数情况下以空格进行分割（本项目用的jieba）
+### 2、处理停用词：本项目未处理
+### 3、设计vocab：统计词频、排序
+### 4、建立词云
+
+
+## 中文文本：
+### 1、分词：比英文复杂一点，往往采用jieba分词等工具进行分词（本项目使用jieba）
+### 2、处理分词：相对于英语该部分比较少
+### 3、设计vocab：统计词频、排序
+### 4、建立词云
+（其实没啥区别，不过建立中文词云需要设置字体，否则会是框）
+
+## 文件介绍：
+### 中文词云.py：最基本的词云（图1）
+### 英文词云.py：最基本的词云（图2）
+### 改变背景.py：更改形状和字体颜色的词云（图3、图4）
 
 # NLP相关流程：
 分词->统计词频->建立词云
