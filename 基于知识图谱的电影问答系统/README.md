@@ -7,7 +7,7 @@
 ### 3、提取问题中的实体
 ### 4、根据类别和实体构建查询语句并查询
 ### 5、根处理查询结果并输出
-#部分知识图谱展示
+# 部分知识图谱展示
 ![Image text](https://github.com/renhongjie/NLP_process/blob/main/基于知识图谱的电影问答系统/1.png)
 图1
 # 样例展示：
