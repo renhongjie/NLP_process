@@ -1,18 +1,34 @@
 # 词云展示
 成果展示：
 
-![Image text](https://github.com/renhongjie/NLP_process/blob/main/词云/1.png)
+![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/词云1.png)
 图1
-![Image text](https://github.com/renhongjie/NLP_process/blob/main/词云/2.png)
+
+![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/词云2.png)
 图2
-![Image text](https://github.com/renhongjie/NLP_process/blob/main/词云/3.png)
+
+![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/词云3.png)
 图3
-![Image text](https://github.com/renhongjie/NLP_process/blob/main/词云/4.png)
+
+![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/词云4.png)
 图4
+
 # NLP相关流程：
 分词->统计词频->建立词云
 
 建立词云貌似有两种方式：一种是直接传入文本，另一种传入词和对应的出现次数（本项目使用第二种方式）
+### 项目结构描述
+```
+├── README.md       // 描述文件
+├── 中文词云.py     // 主函数文件/运行文件
+├── 英文词云.py     // 主函数文件/运行文件
+├── 改变背景.py     // 主函数文件/运行文件
+├── 中文.txt        // 中文的数据文本 
+├── xin.jpeg        // 所用背景图 
+├── man.jpeg        // 所用背景图 
+├── 哈工大停用词.txt// 哈工大停用词+自己添加部分停用词，好像没用上？
+└── 英文.txt        //英文的数据文本
+```
 
 ## 英文词云：
 ### 1、分词：大多数情况下以空格进行分割（本项目用的jieba）
@@ -51,8 +67,3 @@
 ### 3、设计vocab：统计词频、排序
 ### 4、建立词云
 （其实没啥区别，不过建立中文词云需要设置字体，否则会是框）
-
-## 文件介绍：
-### 中文词云.py：最基本的词云（图1）
-### 英文词云.py：最基本的词云（图2）
-### 改变背景.py：更改形状和字体颜色的词云（图3、图4）

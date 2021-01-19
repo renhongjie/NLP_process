@@ -25,5 +25,5 @@
 ├── data_process.py             // 数据处理函数集合
 ├── model.py                    // 模型文件
 ├── train.py                    // 训练函数                 
-└── utils.pt                    //工具函数集合
+└── utils.py                    //工具函数集合
 ```
