@@ -8,7 +8,7 @@
 #### 模型图
 <div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/TextCNN.PNG"/></div>
 <p align="center">图1</p>
-<div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/TextCNN2.PNG"/></div>
+<div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/TextCNN2.png"/></div>
 <p align="center">图2</p>
 #### 准确率
 可以在测试集上达到准确率89%+（复习论文，但是没达到论文的最好效果）
