@@ -34,8 +34,10 @@
 
 ### 部分结果图展示
 ![Image text](https://github.com/renhongjie/NLP_process/blob/main/images/机器翻译结果1.png)
+
 图2
 
 ![Image text](https://github.com/renhongjie/NLP_process/blob/main/images/机器翻译结果2.png)
+
 图3
 
