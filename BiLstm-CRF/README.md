@@ -7,8 +7,6 @@
 使用glove预训练的embedding进行初始化
 
 #### 模型图
-
-![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/BiLSTM&CRF.PNG)
 <div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/BiLSTM&CRF.PNG"/></div>
 <p align="center">图1</p>
 
