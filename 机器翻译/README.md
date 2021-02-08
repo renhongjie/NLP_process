@@ -17,6 +17,8 @@
 ### 为了了解编码器、解码器和注意力机制写的，文件结构比较乱乱的，没有整合起来。跑了跑了字符级翻译、词级别翻译、batch*seq_len数据格式、seq_len*batch数据格式、注意力机制等。S2S_词级_small-atten.ipynb应该是比较完整的，建议参考这个
 
 
+### 参考项目：https://gitee.com/dogecheng/python/blob/master/pytorch/Seq2SeqForTranslation.ipynb
+
 ### 项目结构描述
 ```
 ├── README.md       // 描述文件

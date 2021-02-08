@@ -7,9 +7,8 @@
 使用glove预训练的embedding进行初始化
 
 #### 模型图
-
-![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/ESIM.png)
-
+<div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/ESIM.png"/></div>
+<p align="center">图1</p>
 
 #### 准确率
 可以在测试集上达到准确率76%+（感觉有些问题没解决，组内其他人写的可以80%+）

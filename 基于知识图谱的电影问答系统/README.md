@@ -8,9 +8,8 @@
 ### 4、根据类别和实体构建查询语句并查询
 ### 5、根处理查询结果并输出
 # 部分知识图谱展示
-![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/电影问答系统1.png)
-图1
-
+<div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/电影问答系统1.png"/></div>
+<p align="center">图1</p>
 
 
 ### 项目结构描述

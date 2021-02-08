@@ -1,17 +1,13 @@
 # 词云展示
 成果展示：
-
-![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/词云1.png)
-图1
-
-![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/词云2.png)
-图2
-
-![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/词云3.png)
-图3
-
-![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/词云4.png)
-图4
+<div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/词云1.png"/></div>
+<p align="center">图1</p>
+<div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/词云2.png"/></div>
+<p align="center">图2</p>
+<div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/词云3.png"/></div>
+<p align="center">图3</p>
+<div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/词云4.png"/></div>
+<p align="center">图4</p>
 
 # NLP相关流程：
 分词->统计词频->建立词云

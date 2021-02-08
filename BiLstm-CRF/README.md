@@ -9,7 +9,8 @@
 #### 模型图
 
 ![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/BiLSTM&CRF.PNG)
-
+<div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/BiLSTM&CRF.PNG"/></div>
+<p align="center">图1</p>
 
 #### 准确率
 可以在测试集上达到准确率76%+（感觉有些问题没解决，组内其他人写的可以88%+）

@@ -6,9 +6,12 @@
 #### 词向量
 使用glove预训练的embedding进行初始化
 
-#### 模型图
+# 模型图
+<div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/bert.png"/></div>
+<p align="center">图1</p>
 
-bert使用的bert-base-uncased
+
+### bert使用的bert-base-uncased
 
 
 #### 准确率
