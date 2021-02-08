@@ -1,49 +1,40 @@
 # NLP练习
-NLP的各种小项目练手
+### 基于Seq2Seq的机器翻译
 
-TextCNN：对英文数据集进行二分类任务
+#### 数据集：都提供了
+#### 经过200轮训练大概loss从7点几到了0.5，大概400轮可以到0.1多点
+# 部分细节：
+### 1、数据预处理并封装成特定格式，可能是batch*seq_len,也可以是seq_len*batch，网上项目后者比较多，我一般习惯前者
+### 2、模型训练中50%用预测值当做解码器输输入值，50%用实际值当解码器输入值。测试阶段全部使用预测值
+### 3、构建的热力图其实就是用的attenttion权重
+### 4、进行预测时，注意处理特殊词（sos、pad、eos等）
 
-BiLstim—CRF：对英文数据集进行序列标注任务
+# 模型图
+![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/seq2seq.png)
+图1
 
-ESIM：对英文数据集实现文本蕴含任务
+### 为了了解编码器、解码器和注意力机制写的，文件结构比较乱乱的，没有整合起来。跑了跑了字符级翻译、词级别翻译、batch*seq_len数据格式、seq_len*batch数据格式、注意力机制等。S2S_词级_small-atten.ipynb应该是比较完整的，建议参考这个
 
-BERT_分类：实现BERT完成对英文数据集的二分类任务
-
-word2vec：实现了对<<斗罗大陆>>进行word2vec，可以查询小说中人物关系等
-
-基于知识图谱的电影问答系统：基于规则的问答系统，根据问题产生对应的查询语句，查询知识图谱后根据回答模版进行回复
-
-词云：实现了中文词云、英文词云、不同形状的词云等
 
 ### 项目结构描述
 ```
-├── README.md                   // 描述文件
-├── BERT_分类                   // 文本2分类
-├── BiLstim—CRF                 // 序列标注
-├── ESIM                        // 文本蕴含
-├── TextCNN                     // 文本2分类
-├── word2vec                    // 词向量
-├── 词云                        // 构造词云
-├── 基于知识图谱的电影问答系统  // 问答系统
-├── images                      //存放仓库图片
-└── .gitignore
+├── README.md       // 描述文件
+├── data            // 稍大点的中英数据集文件 
+│    ├── news-commentary-v13.zh-en.en  //google machine translation英语数据集 
+│    └── news-commentary-v13.zh-en.zh  //google machine translation中文数据集 
+├── cmn-eng   // 稍小点的中英数据集文件，下载后解压的文件，下载指令文件中有 
+│    ├── cmn.txt               // 中英数据集
+│    └── _about.txt            // 不知道是啥文件
+├── S2S_字符级_small.ipynb     // S2S模型、字符级别、小数据
+├── S2S_词级_small.ipynb       // S2S模型、词级别、小数据
+├── S2S_词级_small-2.ipynb     // S2S模型、字符级别、小数据
+├── S2S_词级_big.ipynb         // S2S模型、字符级别、大数据，没跑太久，一个多小时一轮...顶不举啊
+└── S2S_词级_small-atten.ipynb // S2S模型、词级别、小数据、注意力机制
 ```
 
+### 部分结果图展示
+![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/机器翻译结果1.png)
+图2
 
-
-# NLP相关流程：
-(个人总结，大致过程如下，可能不同人的总结不同)
-
-## 英文文本：
-### 1、分词：大多数情况下以空格进行分割
-### 2、处理分词：往往缩略词还原、词性还原等（可以采用nltk库进行）
-### 3、设计vocab、word2id、id2word：统计词频、排序等操作后设计vovab并建立id和word的想换转的字典
-### 4、将分词结果转化为id值
-### 5、截断或补全：取一个合理的长度，多则截断，少则补全（往往补0 <-> <unk>）
-
-## 中文文本：
-### 1、分词：比英文复杂一点，往往采用jieba分词等工具进行分词
-### 2、处理分词：相对于英语该部分比较少
-### 3、设计vocab、word2id、id2word：统计词频、排序等操作后设计vovab并建立id和word的想换转的字典
-### 4、将分词结果转化为id值
-### 5、截断或补全：取一个合理的长度，多则截断，少则补全（往往补0 <-> <unk>）
+![Image text](https://github.com/renhongjie/NLP_process/tree/main/images/机器翻译结果2.png)
+图3
