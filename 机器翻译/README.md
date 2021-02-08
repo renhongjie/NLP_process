@@ -10,7 +10,7 @@
 ### 4、进行预测时，注意处理特殊词（sos、pad、eos等）
 
 # 模型图
-<div align=center><![Image text](https://github.com/renhongjie/NLP_process/blob/main/images/seq2seq.png)/></div>
+<div align=center><img  src="https://github.com/renhongjie/NLP_process/blob/main/images/seq2seq.png"/></div>
 <p align="center">图1</p>
 
 
@@ -34,11 +34,11 @@
 ```
 
 ### 部分结果图展示
-<div align=center><![Image text](https://github.com/renhongjie/NLP_process/blob/main/images/机器翻译结果1.png)/></div>
+![Image text](https://github.com/renhongjie/NLP_process/blob/main/images/机器翻译结果1.png)
 
 <p align="center">图2</p>
 
-<div align=center><![Image text](https://github.com/renhongjie/NLP_process/blob/main/images/机器翻译结果2.png)/></div>
+![Image text](https://github.com/renhongjie/NLP_process/blob/main/images/机器翻译结果2.png)
 
 <p align="center">图3</p>
 
