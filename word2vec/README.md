@@ -87,3 +87,8 @@
 ```
 ## 后期优化
 ### 最关键的就是专有名词的词表或者停用词的词表构建，可以把类似技能名字等也收集一波，估计效果会更好
+
+## 关于格式和保存加载的不错的博客
+https://blog.csdn.net/shuihupo/article/details/85162237
+
+https://www.cnblogs.com/xuehuiping/p/12246510.html
