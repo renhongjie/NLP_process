@@ -11,7 +11,8 @@
 
 # 模型图
 ![Image text](https://github.com/renhongjie/NLP_process/blob/main/images/seq2seq.png)
-图1
+<p align="center">图1</p>
+
 
 ### 为了了解编码器、解码器和注意力机制写的，文件结构比较乱乱的，没有整合起来。跑了跑了字符级翻译、词级别翻译、batch*seq_len数据格式、seq_len*batch数据格式、注意力机制等。S2S_词级_small-atten.ipynb应该是比较完整的，建议参考这个
 
@@ -35,9 +36,9 @@
 ### 部分结果图展示
 ![Image text](https://github.com/renhongjie/NLP_process/blob/main/images/机器翻译结果1.png)
 
-图2
+<p align="center">图2</p>
 
 ![Image text](https://github.com/renhongjie/NLP_process/blob/main/images/机器翻译结果2.png)
 
-图3
+<p align="center">图3</p>
 
